@@ -84,7 +84,7 @@ function download_files(){
     if [ -f shadowsocks-libev.zip ];then
         echo "shadowsocks-libev.zip [found]"
     else
-        if ! wget --no-check-certificate https://github.com/madeye/shadowsocks-libev/archive/master.zip -O shadowsocks-libev.zip;then
+        if ! wget --no-check-certificate https://github.com/tomasi/tomasi/blob/master/shadowsocks-libev-master.zip -O shadowsocks-libev.zip;then
             echo "Failed to download shadowsocks-libev.zip"
             exit 1
         fi
